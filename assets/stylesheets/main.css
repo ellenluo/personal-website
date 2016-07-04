@@ -1,7 +1,7 @@
 /* CH01 - Resets
  * CH02 - General Setup
  * CH03 - Navigation Menu
- * CH04 - Header & Navigation
+ * CH04 - Title Screen
  * CH05 - Content & Media
  * CH06 - Footer
  * CH07 - Miscellaneous
@@ -34,25 +34,31 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -72,6 +78,37 @@ body, html {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    font: 16px/150% 'Century Gothic', Arial, sans-serif;
+}
+
+h1 {
+    font: 20vh/150% 'Century Gothic', Arial, sans-serif;
+    color: #2E64D9;
+}
+
+h2 {
+    font: 60px/150% 'Century Gothic', Arial, sans-serif;
+}
+
+h3 {
+    font: 4vh/150% 'Century Gothic', Arial, sans-serif;
+    color: #949494;
+}
+
+h4 {
+    font: italic 3vh/150% 'Century Gothic', Arial, sans-serif;
+    color: #949494;
+}
+
+section {
+    min-height: calc(100% - 50px);
+    min-height: -moz-calc(100% - 50px);
+    min-height: -webkit-calc(100% - 50px);
+    margin: 2% 2% 50px 2%;
+}
+
 /* CH02 - Navigation Menu */
 
 .fixed-nav-bar ul {
@@ -79,9 +116,9 @@ body, html {
     text-align: center;
     width: 100%;
     position: fixed;
-    top: 0;
+    bottom: 0;
     z-index: 10000;
-    background-color: orange;
+    background-color: #2E64D9;
 }
 
 .fixed-nav-bar li {
@@ -93,10 +130,45 @@ body, html {
 
 .fixed-nav-bar li a {
     display: block;
-    text-decoration: none;
+    line-height: 50px;
 }
 
 .fixed-nav-bar li a:hover {
     background-color: black;
 }
+
+/* CH03 - Title Screen */
+
+#title {
+    text-align: center;
+    position: relative;
+}
+
+.top-block {
+    position: absolute;
+    top: 0;
+}
+
+.centered-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-block {
+    position: absolute;
+    padding-bottom: 2%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.border-text {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #949494;
+}
+
 
