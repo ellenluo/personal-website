@@ -112,7 +112,7 @@ img {
 
 section {
     min-height: 100vh;
-    margin: 2% 2% 50px 2%;
+    margin: 0 2%;
     position: relative;
 }
 
@@ -168,7 +168,7 @@ section {
 .top-absolute {
     position: absolute;
     top: 0;
-    margin-top: 2%;
+    margin-top: 5%;
     left: 50%;
     transform: translateX(-50%);
 }
