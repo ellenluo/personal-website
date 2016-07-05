@@ -6,15 +6,14 @@
     <title>Ellen Luo</title>
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <script src="assets/scripts/jquery.js"></script>
-    <script src="assets/scripts/jump-to-bottom.js"></script>
 </head>
 
 <body>
 
-<nav class="fixed-nav-bar">
+<nav id="fixed-nav-bar">
     <ul>
         <li><a class="active" href=#title>Start</a></li>
-        <li><a href=#about>About</a></li>
+        <li><a href=#about id="nav-about">About</a></li>
         <li><a href=#projects>Projects</a></li>
         <li><a href=#resume>Resumé</a></li>
         <li><a href=#contact>Contact</a></li>
@@ -22,28 +21,50 @@
 </nav>
 
 <section id="contact">
-    <h2>Contact Me</h2>
+    <div class="top-block">
+        <h2>Contact Me</h2>
+    </div>
 </section>
 
 <section id="resume">
-    <h2>Resumé</h2>
+    <div class="top-block">
+        <h2>Resumé</h2>
+    </div>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+    <div class="top-block">
+        <h2>Projects</h2>
+    </div>
 </section>
 
 <section id="about">
-    <h2>About Me</h2>
+    <div class="top-block">
+        <h2>About Me</h2>
+    </div>
+    <div class="centered-block">
+        <img class="border-img" src="assets/images/portrait.png" width="20%" height="20%">
+        <p class="left-text">Hi, I'm Ellen Luo, a software developer born and raised in London, Canada. I am currently a
+            18-year-old student majoring in Electrical Engineering and Computer Science at UC Berkeley. Computer science
+            and design are two of my greatest passions, and I love channeling my enthusiasm for both through personal
+            projects. I love to learn new things and am always eager to accept constructive criticism and new ideas.</p>
+        <p class="left-text">I'm proficient in Java, and can apply it to build Android apps (Java/XML/SQLite), as well
+            as GUI apps using Java Swing. I am also familiar with both HTML and CSS, and have recently begun to learn
+            Javascript and JQuery. I'm comfortable using design and development software such as Adobe Photoshop, Adobe
+            Flash, Intellij Idea, Android Studio and WebStorm, and am always on the lookout to pick up new skills.</p>
+        <p class="left-text">Aside from programming, I love drawing and painting both digitally and traditionally, and
+            play various instruments, including the piano, clarinet and (electric and acoustic) guitar. Athletics-wise,
+            I play soccer with friends during the summer, and snowboard down slopes up North during the winter.</p>
+    </div>
 </section>
 
 <section id="title" class="page">
-    <div class="top-block">
+    <div class="top-block" id="title-arrow">
         <a href=#about><img src="assets/images/up-arrow.png" width="50px" height="25px"></a>
     </div>
     <div class="centered-block">
-        <h1>Ellen Luo</h1>
-        <h3 class="border-text">Developer &middot; Designer &middot; Athlete &middot; Musician &middot;
+        <h1 id="title-name">Ellen Luo</h1>
+        <h3 class="border-text" id="title-desc">Developer &middot; Designer &middot; Athlete &middot; Musician &middot;
             Innovator</h3>
     </div>
 </section>

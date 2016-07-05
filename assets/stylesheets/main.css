@@ -88,7 +88,6 @@ a {
 
 h1 {
     font: 140px/150% 'Century Gothic', Arial, sans-serif;
-    color: #2E64D9;
 }
 
 h2 {
@@ -97,12 +96,17 @@ h2 {
 
 h3 {
     font: 28px/150% 'Century Gothic', Arial, sans-serif;
-    color: #949494;
+    color: #2E64D9;
 }
 
-h4 {
-    font: italic 3vh/150% 'Century Gothic', Arial, sans-serif;
+p {
+    font: 16px/150% Verdana, Arial, sans-serif;
     color: #949494;
+    margin-bottom: 2%;
+}
+
+img {
+    margin: 0 2%;
 }
 
 section {
@@ -110,45 +114,6 @@ section {
     min-height: -moz-calc(100vh - 50px);
     min-height: -webkit-calc(100vh - 50px);
     margin: 2% 2% 50px 2%;
-}
-
-/* CH02 - Navigation Menu */
-
-.fixed-nav-bar ul {
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 10000;
-    border-top: 2px solid #2E64D9;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.fixed-nav-bar li {
-    display: inline-block;
-    width: 10%;
-    height: 50px;
-    line-height: 50px;
-}
-
-.fixed-nav-bar li a {
-    display: block;
-    line-height: 50px;
-}
-
-.fixed-nav-bar li a:hover {
-    background-color: #2E64D9;
-}
-
-.fixed-nav-bar .active {
-    text-decoration: underline;
-}
-
-/* CH03 - Title Screen */
-
-#title {
-    text-align: center;
     position: relative;
 }
 
@@ -168,7 +133,6 @@ section {
     transform: translate(-50%, -50%);
 }
 
-/*
 .bottom-block {
     position: absolute;
     margin-bottom: 2%;
@@ -176,12 +140,65 @@ section {
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
-}*/
+}
+
+/* CH02 - Navigation Menu */
+
+#fixed-nav-bar ul {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    border-top: 2px solid #2E64D9;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#fixed-nav-bar li {
+    display: inline-block;
+    width: 10%;
+    height: 50px;
+    line-height: 50px;
+}
+
+#fixed-nav-bar li a {
+    display: block;
+    line-height: 50px;
+}
+
+#fixed-nav-bar li a:hover {
+    border-left: 2px solid #2E64D9;
+    border-right: 2px solid #2E64D9;
+}
+
+#fixed-nav-bar .active {
+    color: #2E64D9;
+}
+
+/* CH03 - Title Screen */
+
+#title {
+    text-align: center;
+}
 
 .border-text {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid #949494;
+    border: 2px solid #2E64D9;
 }
+
+/* CH04 - About Screen */
+
+.border-img {
+    float: left;
+    border: 2px solid white;
+}
+
+.left-text {
+    display:block;
+}
+
+
 
 

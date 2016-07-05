@@ -1,3 +1,31 @@
+var $fixedNavBar = $('#fixed-nav-bar');
+var $titleArrow = $('#title-arrow');
+
+$('html, body').scrollTop($(document).height() - $(window).height());
+$('#title-name').css('visibility', 'hidden');
+$('#title-desc').css('visibility', 'hidden');
+$titleArrow.css('opacity', '0');
+$fixedNavBar.css('visibility', 'hidden');
+
+setTimeout(function() {
+    $('#title-name').css('visibility','visible').hide().fadeIn();
+}, 500);
+
+setTimeout(function() {
+    $('#title-desc').css('visibility','visible').hide().fadeIn();
+}, 1000);
+
+setTimeout(function() {
+    $fixedNavBar.css('visibility','visible').hide().fadeIn();
+}, 1500);
+
+setTimeout(function() {
+    $titleArrow.animate({
+        opacity: 1,
+        'marginTop': "-=1%"
+    }, 2000);
+}, 2000);
+
 $(document).on('click', 'a', function(event){
     event.preventDefault();
 
@@ -6,7 +34,12 @@ $(document).on('click', 'a', function(event){
     }, 2000);
 });
 
-$('.fixed-nav-bar li a').click(function() {
-    $('.fixed-nav-bar li a').removeClass();
+$fixedNavBar.find('li a').click(function() {
+    $fixedNavBar.find('li a').removeClass();
     $(this).addClass('active');
+});
+
+$titleArrow.click(function() {
+    $fixedNavBar.find('li a').removeClass();
+    $('#nav-about').addClass('active');
 });
