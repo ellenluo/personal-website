@@ -81,10 +81,11 @@ body, html {
 a {
     text-decoration: none;
     font: 16px/150% 'Century Gothic', Arial, sans-serif;
+    color: #949494;
 }
 
 h1 {
-    font: 20vh/150% 'Century Gothic', Arial, sans-serif;
+    font: 140px/150% 'Century Gothic', Arial, sans-serif;
     color: #2E64D9;
 }
 
@@ -93,7 +94,7 @@ h2 {
 }
 
 h3 {
-    font: 4vh/150% 'Century Gothic', Arial, sans-serif;
+    font: 28px/150% 'Century Gothic', Arial, sans-serif;
     color: #949494;
 }
 
@@ -118,7 +119,8 @@ section {
     position: fixed;
     bottom: 0;
     z-index: 10000;
-    background-color: #2E64D9;
+    border-top: 2px solid #2E64D9;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .fixed-nav-bar li {
@@ -134,7 +136,7 @@ section {
 }
 
 .fixed-nav-bar li a:hover {
-    background-color: black;
+    background-color: #2E64D9;
 }
 
 /* CH03 - Title Screen */
@@ -147,6 +149,9 @@ section {
 .top-block {
     position: absolute;
     top: 0;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .centered-block {
@@ -157,13 +162,15 @@ section {
     transform: translate(-50%, -50%);
 }
 
+/*
 .bottom-block {
     position: absolute;
-    padding-bottom: 2%;
+    margin-bottom: 2%;
     bottom: 0;
     left: 50%;
+    width: 100%;
     transform: translateX(-50%);
-}
+}*/
 
 .border-text {
     display: inline-block;
