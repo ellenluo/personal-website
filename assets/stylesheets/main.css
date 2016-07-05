@@ -74,8 +74,10 @@ table {
 }
 
 body, html {
-    background-color: black;
-    height: 100%;
+    background: #466368;
+    background: -webkit-linear-gradient(#73BAAA 20%, #0B2E40);
+    background: -moz-linear-gradient(#73BAAA 20%, #0B2E40);
+    background: linear-gradient(#73BAAA 20%, #0B2E40);
 }
 
 a {
@@ -104,9 +106,9 @@ h4 {
 }
 
 section {
-    min-height: calc(100% - 50px);
-    min-height: -moz-calc(100% - 50px);
-    min-height: -webkit-calc(100% - 50px);
+    min-height: calc(100vh - 50px);
+    min-height: -moz-calc(100vh - 50px);
+    min-height: -webkit-calc(100vh - 50px);
     margin: 2% 2% 50px 2%;
 }
 
@@ -137,6 +139,10 @@ section {
 
 .fixed-nav-bar li a:hover {
     background-color: #2E64D9;
+}
+
+.fixed-nav-bar .active {
+    text-decoration: underline;
 }
 
 /* CH03 - Title Screen */
