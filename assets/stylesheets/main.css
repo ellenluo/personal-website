@@ -117,22 +117,6 @@ section {
     position: relative;
 }
 
-.top-block {
-    position: absolute;
-    top: 0;
-    margin-top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.centered-block {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-}
-
 .bottom-block {
     position: absolute;
     margin-bottom: 2%;
@@ -182,6 +166,22 @@ section {
     text-align: center;
 }
 
+.top-absolute {
+    position: absolute;
+    top: 0;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centered-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
 .border-text {
     display: inline-block;
     padding: 5px 10px;
@@ -190,12 +190,17 @@ section {
 
 /* CH04 - About Screen */
 
+.centered-relative {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
 .border-img {
     float: left;
     border: 2px solid white;
 }
 
-.left-text {
+.block-text {
     display:block;
 }
 
