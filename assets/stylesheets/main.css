@@ -2,9 +2,10 @@
  * CH02 - General Setup
  * CH03 - Navigation Menu
  * CH04 - Title Screen
- * CH05 - Content & Media
- * CH06 - Footer
- * CH07 - Miscellaneous
+ * CH05 - About Screen
+ * CH06 - Projects Screen
+ * CH07 - Resume Screen
+ * CH08 - Contact Screen
 */
 
 /* CH01 - Resets */
@@ -106,13 +107,11 @@ p {
 }
 
 img {
-    margin: 0 2%;
+    margin: 0 2% 2% 0;
 }
 
 section {
-    min-height: calc(100vh - 50px);
-    min-height: -moz-calc(100vh - 50px);
-    min-height: -webkit-calc(100vh - 50px);
+    min-height: 100vh;
     margin: 2% 2% 50px 2%;
     position: relative;
 }
@@ -188,10 +187,10 @@ section {
     border: 2px solid #2E64D9;
 }
 
-/* CH04 - About Screen */
+/* CH05 - About Screen */
 
-.centered-relative {
-    margin-bottom: 2%;
+.top-relative {
+    padding: 5% 0 2% 0;
     text-align: center;
 }
 
@@ -202,6 +201,18 @@ section {
 
 .block-text {
     display:block;
+}
+
+/* CH08 - Contact Screen */
+
+#contact {
+    margin: 0;
+    background: #73BAAA url('../images/background.png') repeat-x left bottom;
+    background-size: 100% 100%;
+}
+
+#contact-title {
+    color: #2E64D9;
 }
 
 
