@@ -6,6 +6,7 @@
  * CH06 - Projects Screen
  * CH07 - Resume Screen
  * CH08 - Contact Screen
+ * CH09 - Responsive Design
 */
 
 /* CH01 - Resets */
@@ -88,16 +89,22 @@ a {
 }
 
 h1 {
-    font: 140px/150% 'Century Gothic', Arial, sans-serif;
+    font: 50px/150% 'Century Gothic', Arial, sans-serif;
 }
 
 h2 {
     font: 60px/150% 'Century Gothic', Arial, sans-serif;
+    margin-bottom: 2%;
 }
 
 h3 {
-    font: 28px/150% 'Century Gothic', Arial, sans-serif;
+    font: 16px/150% 'Century Gothic', Arial, sans-serif;
     color: #2E64D9;
+}
+
+h4 {
+    font: bold 20px/150% 'Century Gothic', Arial, sans-serif;
+    margin-bottom: 1%;
 }
 
 p {
@@ -114,6 +121,16 @@ section {
     min-height: 100vh;
     margin: 0 2%;
     position: relative;
+}
+
+::selection {
+    background: white;
+    color: #2E64D9;
+}
+
+::-moz-selection {
+    background: white;
+    color: #2E64D9;
 }
 
 /* CH02 - Navigation Menu */
@@ -139,11 +156,14 @@ section {
 #fixed-nav-bar li a {
     display: block;
     line-height: 50px;
+    -moz-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
 }
 
 #fixed-nav-bar li a:hover {
-    border-left: 2px solid #2E64D9;
-    border-right: 2px solid #2E64D9;
+    color: #2E64D9;
 }
 
 #fixed-nav-bar .active {
@@ -176,6 +196,16 @@ section {
     display: inline-block;
     padding: 5px 10px;
     border: 2px solid #2E64D9;
+}
+
+/* CH06 - Projects Screen */
+
+.project {
+    background: #0B2E40;
+    padding: 1%;
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
 }
 
 /* CH05 - About Screen */
@@ -227,5 +257,14 @@ section {
     font-size: 12px;
 }
 
+@media (min-width:500px) {
+    h1 {
+        font-size: 140px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}
 
 
