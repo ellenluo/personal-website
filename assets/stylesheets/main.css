@@ -84,7 +84,7 @@ body, html {
 
 a {
     text-decoration: none;
-    font: 16px/150% 'Century Gothic', Arial, sans-serif;
+    font: 14px/150% 'Century Gothic', Arial, sans-serif;
     color: #949494;
 }
 
@@ -93,8 +93,7 @@ h1 {
 }
 
 h2 {
-    font: 60px/150% 'Century Gothic', Arial, sans-serif;
-    margin-bottom: 2%;
+    font: 40px/150% 'Century Gothic', Arial, sans-serif;
 }
 
 h3 {
@@ -108,18 +107,18 @@ h4 {
 }
 
 p {
-    font: 16px/150% Verdana, Arial, sans-serif;
+    font: 14px/150% Verdana, Arial, sans-serif;
     color: #949494;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
 }
 
 img {
-    margin: 0 2% 2% 0;
+    margin: 0 10px 10px 0;
 }
 
 section {
     min-height: 100vh;
-    margin: 0 2%;
+    margin: 40px 10px 0 10px;
     position: relative;
 }
 
@@ -148,7 +147,7 @@ section {
 
 #fixed-nav-bar li {
     display: inline-block;
-    width: 10%;
+    margin: 0 1%;
     height: 50px;
     line-height: 50px;
 }
@@ -179,7 +178,7 @@ section {
 .top-absolute {
     position: absolute;
     top: 0;
-    margin-top: 5%;
+    margin-top: 50px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -198,20 +197,10 @@ section {
     border: 2px solid #2E64D9;
 }
 
-/* CH06 - Projects Screen */
-
-.project {
-    background: #0B2E40;
-    padding: 1%;
-    display: inline-block;
-    width: 33%;
-    vertical-align: top;
-}
-
 /* CH05 - About Screen */
 
 .top-relative {
-    padding: 5% 0 2% 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -224,12 +213,23 @@ section {
     display:block;
 }
 
+/* CH06 - Projects Screen */
+
+.project {
+    background: #0B2E40;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
 /* CH08 - Contact Screen */
 
 #contact {
     margin: 0;
     background: #73BAAA url('../images/background.png') repeat-x left bottom;
-    background-size: 100% 100%;
+    background-size: auto 100%;
     text-align: center;
 }
 
@@ -257,13 +257,98 @@ section {
     font-size: 12px;
 }
 
-@media (min-width:500px) {
+/* CH09 - Responsive Design */
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    section {
+        margin: 40px 15px 0 15px;
+    }
+
+    img {
+        margin: 0 15px 15px 0;
+    }
+
+    .top-relative {
+        padding: 30px 0;
+    }
+
+    .border-img {
+        width: 200px;
+    }
+
+    .project {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 750px) {
+    h1 {
+        font-size: 120px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    section {
+        margin: 40px 20px 0 20px
+    }
+
+    img {
+        margin: 0 20px 20px 0;
+    }
+
+    .top-relative {
+        padding-top: 60px;
+    }
+
+    .border-img {
+        width: 250px;
+    }
+
+    .project {
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 49%;
+    }
+}
+
+@media (min-width: 1000px) {
     h1 {
         font-size: 140px;
     }
 
     h3 {
         font-size: 28px;
+    }
+
+    .border-img {
+        width: 300px;
+    }
+
+    .project {
+        width: 33%;
     }
 }
 

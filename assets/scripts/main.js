@@ -22,7 +22,7 @@ setTimeout(function() {
 setTimeout(function() {
     $titleArrow.animate({
         opacity: 1,
-        'marginTop': "-=2%"
+        'marginTop': "-=30px"
     }, 800);
 }, 2000);
 
