@@ -43,3 +43,5 @@ $titleArrow.click(function() {
     $fixedNavBar.find('li a').removeClass();
     $('#nav-about').addClass('active');
 });
+
+
