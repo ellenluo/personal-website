@@ -77,9 +77,9 @@ table {
 
 body, html {
     background: #466368;
-    background: -webkit-linear-gradient(#73BAAA 20%, #0B2E40);
-    background: -moz-linear-gradient(#73BAAA 20%, #0B2E40);
-    background: linear-gradient(#73BAAA 20%, #0B2E40);
+    background: -webkit-linear-gradient(#73BAAA 25%, #0B2E40);
+    background: -moz-linear-gradient(#73BAAA 25%, #0B2E40);
+    background: linear-gradient(#73BAAA 25%, #0B2E40);
 }
 
 a {
@@ -218,7 +218,6 @@ section {
 .project {
     display: inline-block;
     width: 100%;
-    height: 400px;
     vertical-align: top;
     margin-bottom: 10px;
 }

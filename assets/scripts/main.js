@@ -34,13 +34,13 @@ $(document).on('click', 'a', function(event){
     }, 2000);
 });
 
-$fixedNavBar.find('li a').click(function() {
-    $fixedNavBar.find('li a').removeClass();
+$fixedNavBar.find('.link').click(function() {
+    $fixedNavBar.find('.link').removeClass();
     $(this).addClass('active');
 });
 
 $titleArrow.click(function() {
-    $fixedNavBar.find('li a').removeClass();
+    $fixedNavBar.find('.link').removeClass();
     $('#nav-about').addClass('active');
 });
 
