@@ -215,25 +215,33 @@ section {
 
 /* CH06 - Projects Screen */
 
-.project {
-    display: inline-block;
+.scroll-outer {
+    overflow: auto;
     width: 100%;
-    vertical-align: top;
-    margin-bottom: 10px;
+    height: 400px;
 }
 
-.project-title {
-    padding: 10px;
+.project {
+    height: 400px;
+    margin-bottom: 0;
     background: #0B2E40;
+    position: relative;
 }
 
 .project-details {
     background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding: 10px;
 }
 
+.project-title {
+    padding: 20px 10px 10px 10px;
+}
+
 .details-text {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     display: inline-block;
     color: #2E64D9;
     font-size: 11px;
@@ -245,19 +253,13 @@ section {
 
 #contact {
     margin: 0;
-    background: #73BAAA url('../images/background.png') repeat-x left bottom;
-    background-size: auto 100%;
     text-align: center;
 }
 
-#contact-title {
-    color: #2E64D9;
-    margin-bottom: 10%;
-}
-
 .icon {
-    width: 5%;
-    height: 5%;
+    width: 50px;
+    height: 50px;
+    margin: 0;
 }
 
 .bottom-absolute {
@@ -309,13 +311,14 @@ section {
         width: 200px;
     }
 
-    .project {
-        margin-bottom: 15px;
+    .project-title {
+        padding: 30px 15px 15px 15px;
     }
 
-    .project-title, .project-details {
+    .project-details {
         padding: 15px;
     }
+
 }
 
 @media (min-width: 750px) {
@@ -347,9 +350,9 @@ section {
         width: 250px;
     }
 
-    .project {
-        margin-bottom: 20px;
-        width: 49%;
+    .icon {
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -364,10 +367,6 @@ section {
 
     .border-img {
         width: 300px;
-    }
-
-    .project {
-        width: 33%;
     }
 }
 

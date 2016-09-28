@@ -36,12 +36,12 @@ $(document).on('click', 'a', function(event){
 
 $fixedNavBar.find('.link').click(function() {
     $fixedNavBar.find('.link').removeClass();
-    $(this).addClass('active');
+    $(this).addClass('active link');
 });
 
 $titleArrow.click(function() {
     $fixedNavBar.find('.link').removeClass();
-    $('#nav-about').addClass('active');
+    $('#nav-about').addClass('active link');
 });
 
 
