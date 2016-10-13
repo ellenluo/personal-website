@@ -254,7 +254,7 @@ section {
 }
 
 .project-img {
-    display: block;
+    display: none;
     margin: 0;
     height: 100%;
     width: auto;
@@ -387,7 +387,6 @@ section {
     .project-details {
         padding: 15px;
     }
-
 }
 
 @media (min-width: 750px) {
@@ -422,6 +421,10 @@ section {
     .icon {
         width: 60px;
         height: 60px;
+    }
+
+    .project-img {
+        display: block;
     }
 }
 
