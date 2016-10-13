@@ -43,3 +43,15 @@ $titleArrow.click(function() {
     $fixedNavBar.find('.link').removeClass();
     $('#nav-about').addClass('active link');
 });
+
+$("#minimalist").click(function() {
+    window.open("https://github.com/ellenluo/minimaList");
+});
+
+$("#screen-off").click(function() {
+    window.open("https://github.com/Tyler-Zhang/ScreenOff");
+});
+
+$("#personal-website").click(function() {
+    window.open("https://github.com/ellenluo/personal-website");
+});

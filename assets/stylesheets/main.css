@@ -236,6 +236,7 @@ section {
     position: relative;
     display: flex;
     flex-flow: column;
+    cursor: pointer;
 }
 
 .project-details {
@@ -274,22 +275,17 @@ section {
     font-weight: bold;
 }
 
-#screen-off {
-    background-image: url('../images/screenoff.png');
-    width: 100%;
-    height: 100%;
-}
-
-#personal-website {
-    background-image: url('../images/personal-website.png');
-    background-size: cover;
-}
-
 /* CH08 - Contact Screen */
 
 #contact {
     margin: 0;
     text-align: center;
+    background-image: url('../images/background.png');
+    background-size: cover;
+}
+
+#contact-title {
+    color: #2E64D9;
 }
 
 .icon {
