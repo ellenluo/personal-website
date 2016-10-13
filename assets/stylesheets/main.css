@@ -230,23 +230,26 @@ section {
 
 .project {
     height: 400px;
+    width: 100%;
     margin-bottom: 0;
     background: #0B2E40;
     position: relative;
+    display: flex;
+    flex-flow: column;
 }
 
 .project-details {
     background: white;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 10px;
+    flex: 0 1 auto;
 }
 
 .project-upper {
     margin: 0;
     height: 100%;
     display: flex;
+    flex: 1 1 auto;
 }
 
 .project-img {
@@ -259,6 +262,7 @@ section {
 .project-title {
     padding: 20px 10px 10px 10px;
     flex-grow: 1;
+    height: 100%;
 }
 
 .details-text {
@@ -270,16 +274,15 @@ section {
     font-weight: bold;
 }
 
-#minimalist {
-    background-image: url('../images/minimalist.png');
-    width: 100%;
-    height: 100%;
-}
-
 #screen-off {
     background-image: url('../images/screenoff.png');
     width: 100%;
     height: 100%;
+}
+
+#personal-website {
+    background-image: url('../images/personal-website.png');
+    background-size: cover;
 }
 
 /* CH08 - Contact Screen */
