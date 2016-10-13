@@ -26,7 +26,7 @@ setTimeout(function() {
     }, 800);
 }, 2000);
 
-$(document).on('click', 'a', function(event){
+$(document).on('click', '.link', function(event){
     event.preventDefault();
 
     $('html, body').animate({
