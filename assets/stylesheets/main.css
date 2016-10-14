@@ -70,7 +70,7 @@ table {
 
 @font-face {
     font-family: "Century Gothic";
-    src: url('../fonts/century-gothic.tff') format("truetype");
+    src: url('../fonts/century-gothic.ttf') format('truetype');
 }
 
 * {

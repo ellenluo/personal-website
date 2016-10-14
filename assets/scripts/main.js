@@ -42,6 +42,10 @@ $fixedNavBar.find('.link').click(function() {
 $titleArrow.click(function() {
     $fixedNavBar.find('.link').removeClass();
     $('#nav-about').addClass('active link');
+
+    $('html, body').animate({
+        scrollTop: $('#about').offset().top
+    }, 2000);
 });
 
 $("#minimalist").click(function() {
