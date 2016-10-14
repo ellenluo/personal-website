@@ -68,6 +68,11 @@ table {
 
 /* CH02 - General Setup */
 
+@font-face {
+    font-family: "Century Gothic";
+    src: url('../fonts/century-gothic.tff') format("truetype");
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
